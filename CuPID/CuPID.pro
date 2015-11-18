@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -12,9 +12,22 @@ TARGET = CuPID
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp
+SOURCES +=\
+    project.cpp \
+    login.cpp \
+    main.cpp \
+    projectmanage.cpp \
+    stuprofile.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += \
+    project.h \
+    login.h \
+    projectmanage.h \
+    Constant.h \
+    stuprofile.h
 
-FORMS    += mainwindow.ui
+FORMS    += \
+    login.ui \
+    projectmanage.ui \
+    project.ui \
+    stuprofile.ui
